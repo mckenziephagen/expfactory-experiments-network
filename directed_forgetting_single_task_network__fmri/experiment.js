@@ -460,6 +460,8 @@ var refresh_feedback_timing = -1
 var refresh_response_ends = true
 
 var motor_perm = 0
+
+
 /* ************************************ */
 /* Set up jsPsych blocks */
 /* ************************************ */
@@ -1295,6 +1297,9 @@ var testNode = {
 				test_feedback_text +=
 						'</p><p class = block-text>Done with this test.'
 				return false
+		}
+		else {
+			return true
 		}
 	}
 
